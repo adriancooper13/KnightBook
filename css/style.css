@@ -1,0 +1,51 @@
+.bg-secondary {
+	background-color: rgba(108, 117, 125, 0) !important;
+}
+
+body {
+	background-color: rgba(108, 117, 125, 0.5) !important;
+}
+
+.btn {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.modify-btn {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	padding: 20px 8px !important;
+}
+
+.buttons {
+	padding: 0px !important;
+}
+
+.endPageButton {
+	margin-bottom: 60px !important;
+}
+
+.heading {
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	background-color:white;
+}
+
+td {
+	padding: 20px 8px !important;
+}
+
+#myCarousel {
+	width: 50vh;
+	/* height: 45vh; */
+	margin: 0 auto;
+}
+
+.carousel-item > img {
+	width: 50vh !important;
+	height: 45vh !important;
+}

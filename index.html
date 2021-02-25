@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Knightbook</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row bg-warning">
+        <div class="col-md-3">
+          <img src="images/logo.png" width="100" height="100">
+        </div>
+        <div class="col-md-6 justify-content-center align-self-center">
+          <h1><img src="images/knightbookTransparent.png" alt="Logo" style="vertical-align:middle"></h1>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-secondary login">
+        <div class="col-md-6">
+        	<div class="heading">
+        		<h2>Log in, or register:</h2>
+        	</div>
+	      	<input type="text" id="loginName" class="form-control" placeholder="Username" /><br>
+			<input type="password" id="loginPassword" class="form-control" placeholder="Password"/><br>
+			<button type="button" id="loginButton" class="btn btn-warning endPageButton" onclick="doLogin();"> Log Me In </button>
+			<a id="registerLink" href="register.html" class="btn btn-warning endPageButton"> Register </a>
+			<p id="loginResult"></p>
+  		<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner">
+      		<div class="carousel-item active">
+        		<img src="images/carousel1.png" class="d-block w-100" alt="KnightroSign">
+      		</div>
+      		<div class="carousel-item">
+        		<img src="images/carousel2.png" class="d-block w-100" alt="KnightroFountain">
+      		</div>
+      		<div class="carousel-item">
+        		<img src="images/carousel3.png" class="d-block w-100" alt="KnightroStadium">
+          </div>
+		      <div class="carousel-item">
+        		<img src="images/carousel4.png" class="d-block w-100" alt="KnightroConfetti">
+      		</div>
+    		</div>
+      </div>
+		</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      addEventListener("keyup", (event) => {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("loginButton").click();
+        }
+      });
+    </script>
+  </body>
+</html>

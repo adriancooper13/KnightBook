@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>KnightBook</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row bg-warning">
+        <div class="col-md-3">
+          <img src="images/logo.png" width="100" height="100">
+        </div>
+        <div class="col-md-6 justify-content-center align-self-center">
+          <h1><img src="images/knightbookTransparent.png" alt="Logo" style="vertical-align:middle"></h1>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-secondary">
+        <div class="col-md-6">
+          <div class="heading">
+            <h2>Register for an account on KnightBook!</h2>
+          </div>
+          <input type="text" id="registerFirstName" class="form-control" placeholder="First Name"/><br>
+          <input type="text" id="registerLastName" class="form-control" placeholder="Last Name"/><br>
+          <input type="text" id="registerName" class="form-control" placeholder="Username" /><br>
+          <input type="password" id="registerPassword" class="form-control" placeholder="Password"/><br>
+          <button type="button" id="registerButton" class="btn btn-warning endPageButton" onclick="doRegister();"> Register </button><br>
+          <a href="index.html">Have an account? Login here.</a>
+          <p id="registerResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      addEventListener("keyup", (event) => {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("registerButton").click();
+        }
+      });
+    </script>
+  </body>
+</html>
